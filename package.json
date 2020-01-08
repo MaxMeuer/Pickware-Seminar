@@ -2,7 +2,7 @@
   "name": "seminar-proto",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://accountnamexy.github.io/seminar-proto/",
+  "homepage": "https://accountnamexy.github.io/seminar-proto-2/",
   "dependencies": {
     "bootstrap": "^4.3.1",
     "chart.js": "^2.9.3",
