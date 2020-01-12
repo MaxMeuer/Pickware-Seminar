@@ -24,6 +24,7 @@ class Graph extends React.Component {
             this.props.data.map(p => p.subprocesses ? p.subprocesses.map(sub => flattendData.push(sub)) : flattendData.push(p))
             var newData = this.createBubbles(flattendData)
 
+            console.log(newData);
             this.setState({ bubbles: newData[0], links: newData[1] })
         }
     }
@@ -106,6 +107,8 @@ class Graph extends React.Component {
                                     source: subProc.name,
                                     target: nextSubProc.name
                                 }
+                                console.log(link);
+                                links.push(link)
                             })
                         }
                     }

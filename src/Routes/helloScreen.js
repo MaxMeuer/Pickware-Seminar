@@ -10,13 +10,13 @@ const pro = [
         name: "Druckart",
         id: "item0",
         subprocesses: [
-            { name: "Siebdruck", time: "1h 30min", place: "Werkbank 3", ressources: "Farbe", id: "subitem-0" },
-            { name: "Bestickt", time: "3h", place: "Nähmaschine 1", ressources: "Garn", id: "subitem-1" },
-            { name: "Digitaler Direktdruck", time: "20min", place: "Druckmaschine", ressources: " - ", id: "subitem-1" }
+            { name: "Siebdruck", time: "1h 30min", place: "Station 1", ressources: "Farbe", id: "subitem-0" },
+            { name: "Bestickt", time: "3h", place: "Station 1", ressources: "Garn", id: "subitem-1" },
+            { name: "Digitaler Direktdruck", time: "20min", place: "Station 1", ressources: " - ", id: "subitem-1" }
         ]
     },
     { name: "Profi-Qualitätscheck", time: "1h", place: "Station 3", ressources: " - ", id: "item-1" },
-    { name: "Geschenkverpackung", time: "30min", place: "Station 4", ressources: " Geschenkpapier", id: "item-2" },
+
 ]
 
 class HelloScreen extends React.Component {
@@ -25,16 +25,17 @@ class HelloScreen extends React.Component {
         super(props)
         this.props = props
         this.state = {
-            showMask: false,
+            showMask: true,
             name: "",
             place: "",
+            subQuestion: false,
             time: "",
             ressources: "",
             showOrga: false,
             showMainInput: true,
             mainName: "",
             process: pro,
-            subQuestion: true
+            // subQuestion: true
         }
 
         this.handleInput = this.handleInput.bind(this)

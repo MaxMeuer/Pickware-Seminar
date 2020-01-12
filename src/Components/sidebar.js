@@ -15,6 +15,10 @@ class Sidebar extends React.Component {
             <Wrapper>
                 <Stickyness>
                     <Logo src="tud_logo.png" />
+                    <Background>
+
+                        <Logo src="hda.svg" />
+                    </Background>
                     <Topbar>Cross Domain Challenge</Topbar>
                 </Stickyness>
             </Wrapper>
@@ -31,6 +35,13 @@ const Stickyness = styled.div`
     position: sticky; 
     top: 0
 `
+
+const Background = styled.div`
+    margin: 1em;
+    border-radius: 8px;
+    background-color: white;
+`
+
 
 const Topbar = styled.div`
     color: white;
