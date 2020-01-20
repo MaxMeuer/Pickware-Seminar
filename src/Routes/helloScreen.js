@@ -34,7 +34,7 @@ class HelloScreen extends React.Component {
             showOrga: false,
             showMainInput: true,
             mainName: "",
-            process: pro,
+            process: [],
             // subQuestion: true
         }
 
