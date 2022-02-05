@@ -1,3 +1,7 @@
+Implementation for the Technology and Management Seminar at TU Darmstadt WS 2020. 
+
+Visualization of the picking process in a warehouse for product delivery.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
